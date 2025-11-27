@@ -236,6 +236,7 @@ header {
   border-radius: 10px;
   margin-top: 15px;
   padding: 10px;
+  position: relative; /* important */
 }
 
 .post-header {
@@ -250,6 +251,15 @@ header {
   margin-right: 10px;
 }
 
+.cross-icon {
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  top: 10px;      /* distance from top */
+  right: 10px;    /* distance from right */
+  cursor: pointer;
+}
+
 .post-text {
   margin: 10px 0;
 }
@@ -258,6 +268,78 @@ header {
   width: 100%;
   border-radius: 10px;
   margin-top: 5px;
+}
+
+
+.post-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+}
+
+.post-actions button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  color: #555;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.post-actions button:hover {
+  background: #f0f2f5;
+}
+
+.post-actions img {
+  width: 22px;
+  height: 22px;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+}
+
+.post-actions button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  color: #555;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.post-actions button:hover {
+  background: #f0f2f5;
+}
+
+.post-actions i {
+  font-size: 18px;
+}
+
+
+.like-btn.liked {
+  color: #1877f2;
+  font-weight: 600;
+}
+
+.like-btn.liked i {
+  color: #1877f2;  
 }
 
 .rightbar {

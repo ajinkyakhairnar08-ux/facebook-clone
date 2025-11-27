@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <title>Facebook</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -25,7 +26,7 @@
      </div>
    <div class="centernav">
          <a href="#" class="nav-link"><img src="icons8-home-94.png" alt=""></a>
-         <a href="reel.html" class="nav-link"><img src="reels.jpg" alt=""></a>
+         <button onclick="reels()" class="nav-link"><a href="reel.html" ><img src="reels.jpg" alt=""></a></button>
          <a href="#" class="nav-link"><img src="icons8-marketplace-48.png" alt=""></a>
          <a href="#" class="nav-link"><img src="icons8-friends-48.png" alt=""></a>
          <a href="#" class="nav-link"><img src="icons8-game-controller-94 (1) (1).png" alt=""></a>
@@ -87,40 +88,58 @@
         </div>
       </div>
 
-      <div class="post">
+      <div class="post" id="postid">
         <div class="post-header">
           <img src="ajinkya pfp.jpeg" alt="">
-          <div>
+          <div class="postinfo">
             <p class="name">Ajinkya Khairnar</p>
+            <img onclick="remove()" class="cross-icon" src="https://png.pngtree.com/png-vector/20190411/ourmid/pngtree-vector-cross-icon-png-image_925896.jpg" alt="">
             <p class="time">10min ago</p>
           </div>
         </div>
         <p class="post-text">Enjoying a perfect day ☀️</p>
         <img src="ajinkya ad.jpeg" class="post-img" alt="">
+         <div class="post-actions">
+              <button class="like-btn"><i class="fa-regular fa-thumbs-up"></i> Like</button>
+              <button><i class="fa-regular fa-comment"></i> Comment</button>
+              <button><i class="fa-solid fa-share"></i> Share</button>
+          </div>
       </div>
       <br>
-       <div class="post">
+       <div class="post" id="postid1">
         <div class="post-header">
           <img src="atharva pfp.jpeg" alt="">
           <div>
             <p class="name">Atharva Don</p>
+            <img  onclick="remove1()" class="cross-icon" src="https://png.pngtree.com/png-vector/20190411/ourmid/pngtree-vector-cross-icon-png-image_925896.jpg" alt="">
             <p class="time">30min ago</p>
           </div>
         </div>
         <p class="post-text">Cute boy atharva...😍</p>
         <img src="atharva pfp.jpeg" class="post-img" alt="">
+         <div class="post-actions">
+             <button><img src="likepost.svg" alt=""> Like</button>
+             <button><img src="commentpost.svg" alt=""> Comment</button>
+             <button><img src="sharepost.svg" alt=""> Share</button>
+        </div>
       </div>
       <br>
-      <div class="post">
+      <div class="post" id="postid2">
         <div class="post-header">
           <img src="sumit.jpg" alt="">
           <div>
             <p class="name">Sumit Raj</p>
+            <img  onclick="remove2()" class="cross-icon" src="https://png.pngtree.com/png-vector/20190411/ourmid/pngtree-vector-cross-icon-png-image_925896.jpg" alt="">
             <p class="time">2h ago</p>
           </div>
         </div>
         <p class="post-text">Got my MIT degree..😁👍</p>
         <img src="sumit.jpg" class="post-img" alt="">
+         <div class="post-actions">
+             <button><img src="likepost.svg" alt=""> Like</button>
+             <button><img src="commentpost.svg" alt=""> Comment</button>
+             <button><img src="sharepost.svg" alt=""> Share</button>
+        </div>
       </div>
     </main>
 
